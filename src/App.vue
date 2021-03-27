@@ -31,6 +31,10 @@
             <ul class="navbar-nav ml-auto">
               <!-- Messages Dropdown Menu -->
               <li class="nav-item dropdown">
+                 <router-link :to="{ name:'TournamentsCreate'}" class="btn btn-block btn-primary btn-sm">
+                    <i class="fas fa-tasks"></i>
+                    Crear Torneo
+                 </router-link>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                   <a href="#" class="dropdown-item">
                     <!-- Message Start -->
@@ -168,12 +172,12 @@
                       with font-awesome or any other icon font library -->
                   <!-- <li class="nav-header">EXAMPLES</li> -->
                   <li class="nav-item">
-                    <a href="pages/calendar.html" class="nav-link">
+                    <router-link class="nav-link" :to="{ name:'TournamentsList'}">
                       <i class="fas fa-trophy"></i> &nbsp;
                       <p>
                         Torneos
                       </p>
-                    </a>
+                    </router-link>
                   </li>
                   <li class="nav-item">
                     <router-link class="nav-link" :to="{ name:'ListTeams'}">
