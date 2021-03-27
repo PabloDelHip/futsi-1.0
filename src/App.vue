@@ -176,7 +176,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <router-link class="nav-link" :to="{ name:'getUsers'}">
+                    <router-link class="nav-link" :to="{ name:'ListTeams'}">
                       <i class="fas fa-futbol"></i> &nbsp;
                       <p>
                         Equipos
@@ -213,16 +213,16 @@
       </div>
       <!-- ./wrapper -->
 </template>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    
-    export default {
-        data(){
-          return{
-          usuarioActual: null,
-          };
-        }
-    }
+  window.$ = $
+  export default {
+    data(){
+      return{
+      usuarioActual: null,
+      };
+    },
+  }
 </script>
 <style lang="scss">
    @import "./styles/main.scss";
