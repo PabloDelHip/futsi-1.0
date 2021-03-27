@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+   
     <FormUploadComponent/>
   </div>
 </template>
@@ -10,7 +10,7 @@
 import FormUploadComponent from '@/components/Tournaments/FormUploadComponent.vue'
 
 export default {
-  name: 'FormUploadComponent',
+  name: 'Home',
   components: {
     FormUploadComponent
   }

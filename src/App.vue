@@ -224,6 +224,9 @@
         }
     }
 </script>
+<style lang="scss">
+   @import "./styles/main.scss";
+</style>
 <style>
   .logout {
     color: #fff;
