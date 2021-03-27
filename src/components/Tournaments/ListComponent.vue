@@ -44,9 +44,12 @@
                         </div>
                         <div class="card-footer">
                         <div class="text-right">
-                            <a href="#" class="btn btn-sm btn-primary">
-                            <i class="far fa-eye"></i> Ver Torneo
-                            </a>
+                            <router-link
+                                class="btn btn-sm btn-primary"
+                                :to="{ name: 'TournamentsPositionsTable', params: { idTournament: 1 } }"
+                            >
+                                <i class="far fa-eye"></i> Ver Torneo
+                            </router-link>
                         </div>
                         </div>
                     </div>

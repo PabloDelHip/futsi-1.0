@@ -5,7 +5,10 @@ import VueRouter from 'vue-router'
 import Overview from "../views/Dashboard/OverviewComponent.vue";
 
 //Tournaments
-import FormTournaments from "../views/Tournaments/Upload/formView.vue";
+import Tournaments from "../views/Tournaments/index.vue";
+import TournamentsCreate from "../views/Tournaments/Upload/formView.vue";
+import TournamentsList from "../views/Tournaments/ListView.vue";
+import TournamentsPositionsTable from "../views/Tournaments/PositionTableView.vue";
 
 //Teams
 import Teams from "../views/teams/index.vue";
@@ -25,14 +28,26 @@ const routes = [
     component: Overview,
   },
   {
-    path: '/tournaments/create',
-    name: 'TournamentsCreate',
-    component: FormTournaments,
-  },
-  {
-    path: '/tournaments/create',
-    name: 'TournamentsCreate',
-    component: FormTournaments,
+    path: '/tournaments',
+    name: 'Tournaments',
+    component: Tournaments,
+    children:[
+      {
+          path: "create",
+          name: "TournamentsCreate",
+          component: TournamentsCreate,
+      },
+      {
+        path: "list",
+        name: "TournamentsList",
+        component: TournamentsList,
+      },
+      {
+        path: ":idTournament/positions-table",
+        name: "TournamentsPositionsTable",
+        component: TournamentsPositionsTable,
+      }
+    ]
   },
   {
     path: '/teams',
