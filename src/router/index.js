@@ -52,6 +52,11 @@ const routes = [
         path: ":idTournament/upload-teams",
         name: "TournamentsUploadTeams",
         component: TournamentsUploadTeams,
+      },
+      {
+        path: ":idTournament/update-teams",
+        name: "TournamentsUpdateTeams",
+        component: TournamentsUploadTeams,
       }
     ]
   },
