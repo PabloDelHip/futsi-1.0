@@ -6,6 +6,11 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1>Equipos Tournaments</h1>
+            <br>
+            <router-link class="btn btn-outline-primary" :to="{ name:'TournamentsUploadTeams', params: {idTournament: 2 }}">
+              <i class="fas fa-plus"></i>
+              Agregar equipo
+            </router-link>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -24,7 +29,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">DataTable with default features</h3>
+                <h3 class="card-title">Tabla de posiciones</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -42,6 +47,7 @@
                     <th>DG</th>
                     <th>Pts</th>
                     <th>Últimos 5 partidos</th>
+                    <th>Acciones</th>
                   </tr>
                   </thead>
                     <tbody>
@@ -63,6 +69,12 @@
                               <i class="fas fa-check-circle"></i>
                               <i class="fas fa-times-circle"></i>
                           </td>
+                          <td>
+                            <router-link class="btn btn-block btn-outline-success btn-xs" :to="{ name:'TournamentsUpdateTeams', params: {idTournament: 2 }}">
+                              <i class="fas fa-eye"></i>
+                              Ver
+                            </router-link>
+                          </td>
                         </tr>
                         <tr>
                           <td>2</td>
@@ -82,6 +94,12 @@
                               <i class="fas fa-check-circle"></i>
                               <i class="fas fa-times-circle"></i>
                           </td>
+                          <td>
+                            <router-link class="btn btn-block btn-outline-success btn-xs" :to="{ name:'TournamentsUploadTeams', params: {idTournament: 2 }}">
+                              <i class="fas fa-eye"></i>
+                              Ver
+                            </router-link>
+                          </td>
                         </tr>
                         <tr>
                           <td>3</td>
@@ -100,6 +118,12 @@
                               <i class="fas fa-check-circle"></i>
                               <i class="fas fa-check-circle"></i>
                               <i class="fas fa-times-circle"></i>
+                          </td>
+                          <td>
+                            <router-link class="btn btn-block btn-outline-success btn-xs" :to="{ name:'TournamentsUploadTeams', params: {idTournament: 2 }}">
+                              <i class="fas fa-eye"></i>
+                              Ver
+                            </router-link>
                           </td>
                         </tr>
                     </tbody>

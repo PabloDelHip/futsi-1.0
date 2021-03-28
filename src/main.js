@@ -6,12 +6,16 @@ import store from './store'
 import 'vue-datetime/dist/vue-datetime.css'
 import VueMoment from 'vue-moment'
 import moment from 'moment-timezone'
+import VueFileAgent from 'vue-file-agent';
+import  'vue-file-agent/dist/vue-file-agent.css';
+
 moment.tz.setDefault('America/Cancun')
 moment.locale('es');
 
 Vue.use(VueMoment, {
   moment,
 })
+Vue.use(VueFileAgent);
 
 Vue.config.productionTip = false
 new Vue({

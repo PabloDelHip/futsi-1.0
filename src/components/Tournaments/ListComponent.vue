@@ -48,8 +48,14 @@
                                 class="btn btn-sm btn-primary"
                                 :to="{ name: 'TournamentsPositionsTable', params: { idTournament: 1 } }"
                             >
-                                <i class="far fa-eye"></i> Ver Torneo
+                               <i class="fas fa-table"></i> Ver Tabla
                             </router-link>
+                            <!--<router-link
+                                class="btn btn-sm btn-primary"
+                                :to="{ name: 'TournamentsPositionsTable', params: { idTournament: 1 } }"
+                            >
+                                <i class="fas fa-eye"></i> Ver Inf. del Torneo
+                            </router-link> -->
                         </div>
                         </div>
                     </div>

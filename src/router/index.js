@@ -9,6 +9,7 @@ import Tournaments from "../views/Tournaments/index.vue";
 import TournamentsCreate from "../views/Tournaments/Upload/formView.vue";
 import TournamentsList from "../views/Tournaments/ListView.vue";
 import TournamentsPositionsTable from "../views/Tournaments/PositionTableView.vue";
+import TournamentsUploadTeams from "../views/Tournaments/Upload/TeamsView.vue";
 
 //Teams
 import Teams from "../views/teams/index.vue";
@@ -46,6 +47,16 @@ const routes = [
         path: ":idTournament/positions-table",
         name: "TournamentsPositionsTable",
         component: TournamentsPositionsTable,
+      },
+      {
+        path: ":idTournament/upload-teams",
+        name: "TournamentsUploadTeams",
+        component: TournamentsUploadTeams,
+      },
+      {
+        path: ":idTournament/update-teams",
+        name: "TournamentsUpdateTeams",
+        component: TournamentsUploadTeams,
       }
     ]
   },
