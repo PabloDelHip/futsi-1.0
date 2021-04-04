@@ -39,6 +39,11 @@ const routes = [
           component: TournamentsCreate,
       },
       {
+          path: "update",
+          name: "TournamentsUpdate",
+          component: TournamentsCreate,
+      },
+      {
         path: "list",
         name: "TournamentsList",
         component: TournamentsList,

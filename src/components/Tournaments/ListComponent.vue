@@ -45,6 +45,18 @@
                         <div class="card-footer">
                         <div class="text-right">
                             <router-link
+                                class="btn btn-sm bg-teal"
+                                :to="{ name:'TournamentsUpdate'}">
+                               <i class="fas fa-info-circle"></i> Inf. Torneo
+                            </router-link>
+                            &nbsp;
+                            <router-link
+                                class="btn btn-sm bg-info"
+                                :to="{ name:'TournamentsUpdate'}">
+                               <i class="far fa-handshake"></i> Jornadas
+                            </router-link>
+                            &nbsp;
+                            <router-link
                                 class="btn btn-sm btn-primary"
                                 :to="{ name: 'TournamentsPositionsTable', params: { idTournament: 1 } }"
                             >
