@@ -32,14 +32,14 @@
               <!-- Messages Dropdown Menu -->
               <li class="nav-item dropdown">
                  <router-link :to="{ name:'TournamentsCreate'}" class="btn btn-block btn-primary btn-sm">
-                    <i class="fas fa-tasks"></i>
+                    <i class="fas fa-plus"></i>
                     Crear Torneo
                  </router-link>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                   <a href="#" class="dropdown-item">
                     <!-- Message Start -->
                     <div class="media">
-                      <img src="/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                      <img src="/dist/img/default-profile.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                       <div class="media-body">
                         <h3 class="dropdown-item-title">
                           Brad Diesel
@@ -194,7 +194,7 @@
             <!-- /.sidebar -->
           </aside>
 
-          <div class="content-wrapper">
+          <div class="content-wrapper p-4">
               <!-- Content Wrapper. Contains page content -->
             <transition name="fade" mode="out-in">
                 <router-view></router-view>
@@ -229,7 +229,7 @@
   }
 </script>
 <style lang="scss">
-   @import "./styles/main.scss";
+   @import "./sass/main.scss";
 </style>
 <style>
   .logout {
