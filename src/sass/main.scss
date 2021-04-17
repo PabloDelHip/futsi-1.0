@@ -1,0 +1,332 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+// Variables
+@import 'variables';
+
+//funciones
+@import 'functions';
+
+body {
+    font-family: 'Titillium Web', sans-serif !important;
+}
+
+.contenedor-info {
+    background-color: #fff;
+    padding: 0;
+}
+
+.vdatetime-input {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    box-shadow: inset 0 0 0 transparent;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+opacity: 0;
+}
+
+.matchesTable {
+    i {
+        margin: 0 5px;
+        &.fa-check-circle {
+            color: $green-check;
+        }
+
+        &.fa-times-circle {
+            color: $red-check;
+        }
+    }
+}
+
+.image-matches-teams {
+    div {
+        margin: 10px 0;
+        img {
+            width: 75%;
+        }
+    }
+}
+
+div.imagenes-equipos-partidos {
+    margin-top: 13px;
+    background-color: #e8e8e8;
+    padding: 15px 5px;
+}
+
+span.goles-ganador,
+span.goles-perdedor {    
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+span.goles-ganador {
+    color: $green-check;
+}
+
+span.goles-perdedor {
+    color: $red-check
+}
+
+.btn-blue {
+    background-color: $blue-metalic;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    height: 44px;
+    margin: 20px 0 40px;
+    line-height: 44px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    padding: 0 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+
+    &:hover {
+        background-color: #008aaf;
+        color: #fff;
+        border-color: transparent;
+    }
+}
+
+.btn-futsi {
+    padding: 4px 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn-futsi-outline {
+    padding: 4px 20px;
+    color: $azul-fuerte;
+    border: 1px solid $azul-fuerte;
+
+    &:hover {
+        background-color: $azul-medio-fuerte;
+        color: #fff;
+    }
+}
+
+.btn-azul-fuerte {
+    background-color: $azul-fuerte;
+
+    &:hover {
+        background-color: $azul-medio-fuerte;
+        color: #fff;
+    }
+}
+
+.liga {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 2px;
+    .texto-liga {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $navye-blue;
+        line-height: 44px;
+        font-size: 16px;
+        font-weight: 600;
+
+        &:hover {
+            color: $blue-metalic;
+        }
+
+        &:after {
+            font-family: "Font Awesome 5 Free";
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-feature-settings: normal;
+            font-variant: normal;
+            text-transform: none;
+            direction: ltr;
+            unicode-bidi: embed;
+            content: ">";
+            right: 15px;
+            transform: none;
+            font-size: 24px;
+            display: block;
+            position: absolute;
+            top: 0;
+            margin-top: 6px;
+        }
+    }
+}
+
+.texto-liga-torneo {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $navye-blue;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        color: $blue-metalic;
+    }
+
+}
+
+.img-portada-league {
+    height: 250px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &:hover {
+        opacity: .7;
+        cursor: pointer;
+    }
+
+    &:hover img {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+
+    img {
+        margin-top: -20px;
+        transition: all .2s ease-in-out;
+        opacity: 0;
+    }
+}
+
+.img-profile-league {
+
+    img.camere {
+        transition: all .2s ease-in-out;
+        position: absolute;
+        margin: -38px 0px 0px -93px;
+        opacity: 0;
+    }
+    &:hover img.camere{
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    img.img-profile {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #e0e0e0;
+        margin-top: -80px;
+        cursor: pointer;
+        background: #cecccc;
+        &:hover {
+            -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+        }
+    }
+    
+}
+
+.titulo-profile {
+    font-size: 1.3rem;
+    color: $navye-blue;
+}
+
+.info-torneos-league {
+    .torneo-league {
+        border: solid 2px $gris;
+        min-height: 363px;
+        img.sub-img-league {
+            width: 100%;
+            height: 120px;
+            &:hover {
+                opacity: .7;
+                cursor: pointer;
+            }
+        }
+
+        div.plus-torneo img {
+            &:hover {
+                opacity: .7;
+                cursor: pointer;
+            } 
+        }
+
+        p {
+            font-size: .9em;
+            color: $gris-letras;
+            font-weight: 700;
+            display: block;
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        .plus-torneo {
+            img {
+                width: 100;
+            }
+        }
+    }
+}
+
+.status-torneo,
+.status-torneo-finalizado {
+    margin-bottom: 15px;
+    span {
+        color: #fff;
+        padding: 5px;
+        font-size: .9em;
+        font-weight: 600;
+    }
+}
+
+.status-torneo {
+    span {
+        background-color: $azul-aqua;
+    }
+}
+
+.status-torneo-finalizado {
+    span {
+        background-color: $navye-blue;
+    }
+}
+
+div.details-leagues {
+    span {
+        margin-right: 15px;
+        font-size: .9em;
+        color: #fff;
+        padding: 5px;
+        font-weight: 600;
+    }
+
+    span.detail-futbol {
+        background-color: $azul-aqua-bajo;
+    }
+
+    span.detail-genero {
+        background-color: $azul-medio;
+    }
+
+    span.detail-aficionado {
+        background-color: $azul-marino;
+    }
+}
+
