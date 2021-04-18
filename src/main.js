@@ -17,7 +17,7 @@ Vue.use(VueMoment, {
   moment,
 })
 Vue.use(VueFileAgent);
-Vue.use(VModal, { dynamicDefault: { draggable: true, resizable: true } })
+Vue.use(VModal, { dynamicDefault: { draggable: true, resizable: true, adaptive: true } })
 
 Vue.config.productionTip = false
 new Vue({
