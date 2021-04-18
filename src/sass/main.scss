@@ -110,12 +110,14 @@ span.goles-perdedor {
     padding: 4px 20px;
     color: #fff;
     font-size: 18px;
+    border: 0;
 }
 
 .btn-futsi-outline {
     padding: 4px 20px;
     color: $azul-fuerte;
     border: 1px solid $azul-fuerte;
+    background-color: transparent;
 
     &:hover {
         background-color: $azul-medio-fuerte;
@@ -220,6 +222,7 @@ span.goles-perdedor {
         position: absolute;
         margin: -38px 0px 0px -93px;
         opacity: 0;
+        cursor: pointer;
     }
     &:hover img.camere{
         transform: translateY(20px);
@@ -244,6 +247,21 @@ span.goles-perdedor {
 .titulo-profile {
     font-size: 1.3rem;
     color: $navye-blue;
+}
+
+.titulo-azul {
+    font-size: 1.3rem;
+    color: $azul-medio;
+}
+
+.titulo-medio-pequeño-azul {
+    font-size: 1.1rem;
+    color: $azul-medio;
+}
+
+.titulo-pequeño-azul-marino {
+    font-size: .9rem;
+    color: $azul-marino;
 }
 
 .info-torneos-league {
@@ -330,3 +348,21 @@ div.details-leagues {
     }
 }
 
+
+.eliminar {
+    color: $red-check;
+    font-size: .8em;
+}
+
+.contenedor-version-torneo {
+    border: solid 2px $gris;
+    min-height: 255px;
+}
+
+.texto-pequeno {
+    font-size: .9em;
+    color: $gris-letras;
+    font-weight: 700;
+    font-weight: 500;
+            
+}

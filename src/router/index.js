@@ -10,6 +10,8 @@ import TournamentsCreate from "../views/Tournaments/Upload/formView.vue";
 import TournamentsList from "../views/Tournaments/ListView.vue";
 import TournamentsPositionsTable from "../views/Tournaments/PositionTableView.vue";
 import TournamentsUploadTeams from "../views/Tournaments/Upload/TeamsView.vue";
+import TournamentsVersion from "../views/Tournaments/Upload/VersionView"
+
 
 //Teams
 import Teams from "../views/teams/index.vue";
@@ -66,6 +68,7 @@ const routes = [
         name: "TournamentsUpdateTeams",
         component: TournamentsUploadTeams,
       }
+
     ]
   },
   {
@@ -95,6 +98,12 @@ const routes = [
         name: "ProfileLeagues",
         component: LeaguesProfile,
         props: true
+      },
+      {
+        path: "version/tournament/:id_league",
+        name: "VersionTournament",
+        component: TournamentsVersion,
+        params: true
       }
     ]
   },
