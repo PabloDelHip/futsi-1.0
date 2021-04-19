@@ -2,7 +2,7 @@
   <div>
     <div class="row justify-content-center col-12 mb-3">
         <div class="col-8">
-                <router-link :to="{ name:'TournamentsCreate'}" class="btn-blue btn-block">
+                <router-link :to="{ name:'CreateLeagues'}" class="btn-blue btn-block">
                     <i class="fas fa-plus"></i>
                     Crear Liga
                 </router-link>
