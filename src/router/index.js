@@ -24,6 +24,7 @@ import MatchesList from "../views/Matches/ListView.vue";
 //Leagues
 import LeaguesList from "../views/Leagues/ListView.vue";
 import LeaguesProfile from "../views/Leagues/ProfileView";
+import LeaguesCreate from "../views/Leagues/Form/UploadView.vue";
 
 Vue.use(VueRouter)
 
@@ -103,6 +104,12 @@ const routes = [
         path: "profile/:id",
         name: "ProfileLeagues",
         component: LeaguesProfile,
+        props: true
+      },
+      {
+        path: "create",
+        name: "CreateLeagues",
+        component: LeaguesCreate,
         props: true
       },
       {
