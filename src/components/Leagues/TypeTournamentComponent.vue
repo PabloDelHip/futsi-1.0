@@ -14,7 +14,7 @@
                         </button>
                     </div>
                     <div v-if="liga" class="row col-12">
-                        <PointsTournamentComponent/>
+                        <PointsTournamentComponent :tipo_torneo="0"/>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                         </button>
                     </div>
                     <div v-if="liga_liguilla" class="row col-12">
-                        <PointsTournamentComponent/>
+                        <PointsTournamentComponent :tipo_torneo="1"/>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div v-if="eliminatoria" class="row col-12">
-                    <PointsTournamentComponent/>
+                    <PointsTournamentComponent :tipo_torneo="2"/>
                 </div>
             </div>
 
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div v-if="grupos" class="row col-12">
-                    <PointsTournamentComponent/>
+                    <PointsTournamentComponent :tipo_torneo="3"/>
                 </div>
             </div>
         </div>
@@ -75,17 +75,18 @@
 
 <script>
 import PointsTournamentComponent from './PointsTournament.vue'
+
 export default {
     components: {
-    PointsTournamentComponent
-  },
-  data: function () {
+        PointsTournamentComponent
+    },
+    data: function () {
       return {
           liga:false,
           liga_liguilla: false,
           eliminatoria: false,
           grupos: false
       };
-    }
+    },
 }
 </script>

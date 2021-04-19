@@ -16,6 +16,10 @@ body {
     padding: 0;
 }
 
+.contenedor-info-tournament {
+    background-color: #fff;
+}
+
 .vdatetime-input {
     display: block;
     width: 100%;
@@ -109,8 +113,17 @@ span.goles-perdedor {
 .btn-futsi {
     padding: 4px 20px;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     border: 0;
+    margin: 0 10px;
+}
+
+.btn-azul-marino {
+    background-color: $azul-marino;
+    &:hover {
+        background-color: $azul-medio-fuerte;
+        color: #fff;
+    }
 }
 
 .btn-futsi-outline {
@@ -190,9 +203,18 @@ span.goles-perdedor {
     }
 
 }
-
 .img-portada-league {
     height: 250px;
+}
+
+.img-portada-tournament {
+    height: 400px;
+    background-size: cover !important;
+}
+
+.img-portada-league,
+.img-portada-tournament {
+   
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -359,10 +381,36 @@ div.details-leagues {
     min-height: 255px;
 }
 
-.texto-pequeno {
-    font-size: .9em;
+.texto-pequeno,
+.texto-mediano,
+.texto-mediano-ancho {
     color: $gris-letras;
     font-weight: 700;
     font-weight: 500;
             
+}
+
+.texto-pequeno {
+    font-size: .9em;
+}
+
+.texto-mediano-ancho {
+    font-weight: 700 !important;
+     span {
+         font-weight: 500 !important;
+     }
+}
+
+.texto-gris {
+    color: $gris-letras;
+}
+
+.mas-informacion-torneo {
+    p {
+        font-weight: 700;
+        span {
+            display: block;
+            font-weight: 500;
+        }
+    }
 }

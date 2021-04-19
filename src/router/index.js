@@ -11,7 +11,7 @@ import TournamentsList from "../views/Tournaments/ListView.vue";
 import TournamentsPositionsTable from "../views/Tournaments/PositionTableView.vue";
 import TournamentsUploadTeams from "../views/Tournaments/Upload/TeamsView.vue";
 import TournamentsVersion from "../views/Tournaments/Upload/VersionView"
-
+import TournmanetsProfile from "../views/Tournaments/ProfileView.vue"
 
 //Teams
 import Teams from "../views/teams/index.vue";
@@ -67,6 +67,12 @@ const routes = [
         path: ":idTournament/update-teams",
         name: "TournamentsUpdateTeams",
         component: TournamentsUploadTeams,
+      },
+      {
+        path: "profile/:id",
+        name: "ProfileTournament",
+        component: TournmanetsProfile,
+        props: true
       }
 
     ]
