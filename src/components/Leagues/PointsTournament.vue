@@ -40,7 +40,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn-futsi btn-azul-fuerte">
+                            <button @click="seleccionarTipoTorneo" class="btn-futsi btn-azul-fuerte">
                                 Continuar
                             </button>
                         </div>
@@ -48,7 +48,9 @@
 </template>
 
 <script>
+import EventBus from '../../bus';
 export default {
+    props: ['tipo_torneo'],
     data: function () {
       return {
           form: {
@@ -57,10 +59,17 @@ export default {
               puntos_empate: 1,
               puntos_victoria_penales: 2,
               puntos_derrota_penales: 1,
-              desempate_penales: false
+              desempate_penales: false 
 
           }
       };
+    },
+    methods: {
+        seleccionarTipoTorneo() {
+            console.log('si funciona')
+            // 0: liga, 1: liga y liguilla, 2: eliminatoria, 3: grupos
+            EventBus.$emit('tipoTorneoSeleccionado', this.form, this.tipo_torneo)
+        }
     }
 }
 </script>
