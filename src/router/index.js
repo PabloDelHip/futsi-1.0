@@ -12,6 +12,15 @@ import TournamentsPositionsTable from "../views/Tournaments/PositionTableView.vu
 import TournamentsUploadTeams from "../views/Tournaments/Upload/TeamsView.vue";
 import TournamentsVersion from "../views/Tournaments/Upload/VersionView"
 import TournmanetsProfile from "../views/Tournaments/ProfileView.vue"
+import TournamentsInformation from "../components/Tournaments/Profile/InformationComponent"
+import TournamentsNews from "../components/Tournaments/Profile/NewsComponent.vue"
+import TournamentsTeams from "../components/Tournaments/Profile/TeamsComponent.vue"
+import TournamentsMatches from "../components/Tournaments/Profile/MatchesComponent.vue"
+import TournamentsResults from "../components/Tournaments/Profile/ResultsComponent.vue"
+import TournamentsPositions from "../components/Tournaments/Profile/PositionsTableComponent.vue"
+import TournamentsReports from "../components/Tournaments/Profile/ReportsComponent.vue"
+import TournamentsPlayers from "../components/Tournaments/Profile/PlayersComponent.vue"
+
 
 //Teams
 import Teams from "../views/teams/index.vue";
@@ -73,7 +82,49 @@ const routes = [
         path: "profile/:id",
         name: "ProfileTournament",
         component: TournmanetsProfile,
-        props: true
+        props: true,
+        children:[
+          {
+            path: "information",
+            name: "InformationTournaments",
+            component: TournamentsInformation,
+          },
+          {
+            path: "news",
+            name: "NewsTournaments",
+            component: TournamentsNews,
+          },
+          {
+            path: "teams",
+            name: "TeamsTournaments",
+            component: TournamentsTeams,
+          },
+          {
+            path: "matches",
+            name: "MatchesTournaments",
+            component: TournamentsMatches,
+          },
+          {
+            path: "results",
+            name: "ResultsTournaments",
+            component: TournamentsResults,
+          },
+          {
+            path: "positions",
+            name: "PositionsTournaments",
+            component: TournamentsPositions,
+          },
+          {
+            path: "reports",
+            name: "ReportsTournaments",
+            component: TournamentsReports,
+          },
+          {
+            path: "players",
+            name: "PlayersTournaments",
+            component: TournamentsPlayers,
+          }
+        ]
       }
 
     ]
