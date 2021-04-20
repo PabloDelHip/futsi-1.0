@@ -414,3 +414,22 @@ div.details-leagues {
         }
     }
 }
+
+.contenedor-menu-tournament {
+    height: 42px;
+}
+
+.menu-tournament {
+    a {
+        font-size: .9em;
+        color: $azul-marino;
+        font-weight: 500;
+        margin: 0 15px;
+        padding: 11px 5px;
+    }
+}
+
+.active-menu-tournament {
+    color: #fff !important;
+    background-color: $azul-medio-fuerte;
+}

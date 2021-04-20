@@ -1,5 +1,41 @@
 <template>
     <div class="row col-12 justify-content-center">
+        <div class="row col-12 align-items-center contenedor-menu-tournament contenedor-info-tournament mb-3">
+            <div class="col-12 text-center menu-tournament">
+                <a class="active-menu-tournament" href="#">
+                    <i class="fas fa-info-circle"></i>
+                    Información
+                </a>
+                <a href="#">
+                    <i class="fas fa-newspaper"></i>
+                    Noticias
+                </a>
+                <a href="#">
+                    <i class="fas fa-shield-alt"></i>
+                    Equipos
+                </a>
+                <a href="#">
+                    <i class="fas fa-sitemap"></i>
+                    Partidos
+                </a>
+                <a href="#">
+                    <i class="fas fa-list-alt"></i>
+                    Resultados
+                </a>
+                <a href="#">
+                    <i class="fas fa-list-ol"></i>
+                    Tabla
+                </a>
+                <a href="#">
+                    <i class="fas fa-chart-bar"></i>
+                    Reportes
+                </a>
+                <a href="#">
+                    <i class="fas fa-user-shield"></i>
+                    Deportistas
+                </a>
+            </div>
+        </div>
         <div class="row col-10 contenedor-info-tournament p-0">
             <div class="col-7 row img-portada-tournament p-0 m-0 align-items-center"
                 :style="{
