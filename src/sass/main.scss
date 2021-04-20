@@ -102,6 +102,7 @@ span.goles-perdedor {
     text-overflow: ellipsis;
     overflow: hidden;
     text-align: center;
+    border: 0;
 
     &:hover {
         background-color: #008aaf;
@@ -427,9 +428,30 @@ div.details-leagues {
         margin: 0 15px;
         padding: 11px 5px;
     }
+
+    
 }
 
 .active-menu-tournament {
     color: #fff !important;
     background-color: $azul-medio-fuerte;
+}
+
+.contenedor-noticia {
+    button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 15px;
+        margin-left: 15px;
+        background-color: transparent;
+        color: $red-check;
+        font-size: .9em;
+        border: 0
+    }
+
+    &:hover {
+        border: solid 1px $azul-aqua;
+        cursor: pointer;
+    }
 }

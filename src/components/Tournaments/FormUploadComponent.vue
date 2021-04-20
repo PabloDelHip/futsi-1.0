@@ -146,7 +146,7 @@ export default {
   },
   methods: {
     saveTournament() {
-      this.$router.push({ name: 'ProfileTournament', params: {id: 2} })
+      this.$router.push({ name: 'InformationTournaments', params: {id: 5} })
     }
   },
   mounted() {

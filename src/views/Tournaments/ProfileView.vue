@@ -1,16 +1,16 @@
 <template>
     <!-- Main content -->
     <div>
-        <InformationComponent/>
+        <ProfileComponent/>
     </div>
 </template>
 
 <script>
-    import InformationComponent from '@/components/Tournaments/Profile/InformationComponent';
+    import ProfileComponent from '@/components/Tournaments/Profile/ProfileComponent';
 
     export default {
         components: {
-            InformationComponent
+            ProfileComponent
         },
     }
 </script>

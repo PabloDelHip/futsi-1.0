@@ -19,6 +19,8 @@ Vue.use(VueMoment, {
 Vue.use(VueFileAgent);
 Vue.use(VModal, { dynamicDefault: { draggable: true, resizable: true, adaptive: true } })
 
+window.$ = window.jQuery = require("jquery")
+
 Vue.config.productionTip = false
 new Vue({
   router,
