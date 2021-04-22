@@ -20,7 +20,7 @@ import TournamentsResults from "../components/Tournaments/Profile/ResultsCompone
 import TournamentsPositions from "../components/Tournaments/Profile/PositionsTableComponent.vue"
 import TournamentsReports from "../components/Tournaments/Profile/ReportsComponent.vue"
 import TournamentsPlayers from "../components/Tournaments/Profile/PlayersComponent.vue"
-
+import TournamentsPlayersTeam from "../views/teams/Players/ListView.vue"
 
 //Teams
 import Teams from "../views/teams/index.vue";
@@ -97,7 +97,19 @@ const routes = [
           {
             path: "teams",
             name: "TeamsTournaments",
-            component: TournamentsTeams,
+            component: Teams,
+            children: [
+              {
+                path: "/",
+                name: "TeamsInTournaments",
+                component: TournamentsTeams,
+              },
+              {
+                path: ":id_team/players",
+                name: "PlayersTeamTournaments",
+                component: TournamentsPlayersTeam,
+              }
+            ]
           },
           {
             path: "matches",

@@ -15,7 +15,7 @@
                 </router-link>
                 <router-link
                     active-class="active-menu-tournament"
-                    :to="{ name: 'TeamsTournaments', params: {id: 5}}">
+                    :to="{ name: 'TeamsInTournaments', params: {id: 5}}">
                     <i class="fas fa-shield-alt"></i>
                     Equipos
                 </router-link>
@@ -51,8 +51,8 @@
                 </router-link>
             </div>
         </div>
-
-        <transition name="fade" mode="out-in">
+    
+        <transition class="col-12" name="fade" mode="out-in">
             <router-view></router-view>
         </transition>
         

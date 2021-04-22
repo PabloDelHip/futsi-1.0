@@ -9,6 +9,7 @@ import moment from 'moment-timezone'
 import VueFileAgent from 'vue-file-agent';
 import  'vue-file-agent/dist/vue-file-agent.css';
 import VModal from 'vue-js-modal'
+import Multiselect from 'vue-multiselect'
 
 moment.tz.setDefault('America/Cancun')
 moment.locale('es');
@@ -18,7 +19,7 @@ Vue.use(VueMoment, {
 })
 Vue.use(VueFileAgent);
 Vue.use(VModal, { dynamicDefault: { draggable: true, resizable: true, adaptive: true } })
-
+Vue.component('multiselect', Multiselect);
 window.$ = window.jQuery = require("jquery")
 
 Vue.config.productionTip = false
