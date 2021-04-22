@@ -1,6 +1,6 @@
 <template>
     <!-- Main content -->
-    <div>
+    <div class="col-12">
         <ProfileComponent/>
     </div>
 </template>

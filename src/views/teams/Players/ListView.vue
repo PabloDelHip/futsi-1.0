@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import ListComponent from '@/components/Teams/ListComponent';
+    import ListComponent from '@/components/Teams/Players/ListComponent';
 
     export default {
         components: {

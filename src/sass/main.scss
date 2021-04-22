@@ -455,3 +455,80 @@ div.details-leagues {
         cursor: pointer;
     }
 }
+
+.contenedor-equipos,
+.contenedor-jugadores {
+    border: solid 2px $gris;
+    &:hover {
+        background-color: $gris;
+    }
+    a {
+        font-size: 1em;
+        font-weight: 600;
+        color: $azul-fuerte !important;
+        &:hover {
+            color: $azul-medio !important;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        color: $azul-marino;
+        border: 0;
+        font-size: .8em;
+        font-weight: 600;
+        &:hover {
+            color: $azul-medio !important;
+        }
+    }
+}
+
+.contenedor-jugadores {
+    img {
+        border-radius: 50%;
+    }
+    h4 {
+        font-size: 1em;
+    }
+
+    hr {
+        margin-bottom: 0;
+    }
+
+    span.fecha-nacimiento {
+        font-size: .8em;
+        font-weight: 700;
+        color: $gris-letras;
+    }
+
+    .posicion {
+        background-color: transparent;
+        color: #427B80;
+        border: 0;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .number-player {
+        background-color: $azul-medio-fuerte;
+        border-radius: 50%;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .editar {
+        position: absolute;
+        right: 0;
+        button: 0;
+        margin-left: 15px;
+        background-color: transparent;
+        color: $azul-medio;
+        font-size: .9em;
+        border: 0;
+    }
+}
+
+
+.multiselect__tags {
+    border-radius: 0 !important;
+}

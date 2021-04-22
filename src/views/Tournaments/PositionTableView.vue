@@ -1,6 +1,6 @@
 <template>
     <!-- Main content -->
-    <div>
+    <div class="col-12 p-0 m-0">
         <TablePositionsComponent/>
     </div>
 </template>
