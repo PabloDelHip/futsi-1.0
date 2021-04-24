@@ -372,9 +372,15 @@ div.details-leagues {
 }
 
 
-.eliminar {
+.eliminar,
+.eliminar-jornada {
     color: $red-check;
     font-size: .8em;
+}
+
+.eliminar-jornada {
+    background-color: transparent;
+    border: 0 !important;
 }
 
 .contenedor-version-torneo {
@@ -457,7 +463,8 @@ div.details-leagues {
 }
 
 .contenedor-equipos,
-.contenedor-jugadores {
+.contenedor-jugadores,
+.contenedor-partidos {
     border: solid 2px $gris;
     &:hover {
         background-color: $gris;
@@ -479,6 +486,21 @@ div.details-leagues {
         font-weight: 600;
         &:hover {
             color: $azul-medio !important;
+        }
+    }
+}
+
+.contenedor-partidos {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.contenedor-partidos {
+    .header-partido {
+        font-weight: 600;
+        span {
+            color: $blue-metalic;
         }
     }
 }
@@ -525,6 +547,34 @@ div.details-leagues {
         color: $azul-medio;
         font-size: .9em;
         border: 0;
+    }
+}
+
+
+.multiselect__tags {
+    border-radius: 0 !important;
+}
+
+.btn-jornada {
+    padding: 10px;
+    font-size: .8em;
+    margin: 10px;
+    line-height: 0;
+}
+
+.equipo-partido {
+    img {
+        width: 90px;
+    }
+}
+
+.resultado-partido {
+    p {
+        background-color: $navye-blue;
+        color: #fff;
+    }
+    .horario {
+        font-size: .8em;
     }
 }
 

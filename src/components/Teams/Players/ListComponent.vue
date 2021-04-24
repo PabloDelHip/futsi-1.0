@@ -1,8 +1,8 @@
 <template>
     <div class="row col-12">
         <modal name="modal-new-player"
-        :height="'auto'"
-        :scrollable="true">
+          :height="'auto'"
+          :scrollable="true">
             <div class="row m-0 p-3">
                 <div class="col-12 text-center mt-2">
                     <p class="titulo-azul">Agregar Jugador</p>
@@ -318,8 +318,6 @@ export default {
       }
   },
   mounted() {
-    console.log('La data', this.formDataPoints)
-    console.log('tipo_torneo', this.tipo_torneo)
     this.minDateTime = moment().format("YYYY-MM-DD")
   }
 }
