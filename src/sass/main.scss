@@ -111,6 +111,17 @@ span.goles-perdedor {
     }
 }
 
+.btn-blue-pequeno {
+    background-color: $blue-metalic;
+    color: #fff;
+
+    &:hover {
+        background-color: #008aaf;
+        color: #fff;
+        border-color: transparent;
+    }
+}
+
 .btn-futsi {
     padding: 4px 20px;
     color: #fff;
@@ -397,6 +408,10 @@ div.details-leagues {
             
 }
 
+.gol-resultado {
+    font-weight: 600;
+}
+
 .texto-pequeno {
     font-size: .9em;
 }
@@ -410,6 +425,47 @@ div.details-leagues {
 
 .texto-gris {
     color: $gris-letras;
+}
+
+.tabla-jugadores {
+    p {
+        border-bottom: 1px solid $azul-fuerte;
+        display: inline;
+        padding: 2px 15px;
+    }
+}
+
+.texto-azul {
+    color: $azul-fuerte;
+}
+
+.tarjeta-gol {
+    button.tarjetas-amarillas,
+    .goles-jugadores
+     {
+        margin: 0 5px;
+        background-color: $amarillo-tarjeta;
+        border: 0;
+        text-align: center;
+        color: #fff;
+        padding: 2px 15px;
+        font-size: .9em;
+    }
+
+    .goles-jugadores {
+        background-color: $green-check;
+    }
+}
+
+.table-jugadores {
+    thead {
+        tr {
+            th {
+                color: $gris-letras;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 .mas-informacion-torneo {
@@ -578,6 +634,62 @@ div.details-leagues {
     }
 }
 
+.tabla-posiciones {
+    position: relative;
+    color: #081f2c;
+    font-size: 14px;
+    font-weight: 500;
+    border-spacing: 0;
+    width: calc(100% + 1px);
+    min-width: 0;
+    table-layout: fixed;
+    background-color: #fff;
+    thead {
+        background-color: #081f2c;
+        color: #fff;
+    }
+    
+}
+
+.tabla-posiciones {
+    thead {
+        background-color: $navye-blue;
+        color: #fff;
+    }
+
+    th {
+        padding: 11px;
+        padding-left: 8px;
+        text-align: center;
+    }
+
+    th.table-posicion {
+        width: 50px;
+    }
+
+    th.table-equipos {
+        width: 180px;
+    }
+
+    th.table-puntos {
+        width: 100px;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    td.tabla-nombre-equipo {
+        text-align: left;
+    }
+}
+
+
+.btn-puntos {
+    line-height: 0;
+    margin: 0 !important;
+    height: 30px;
+}
 
 .multiselect__tags {
     border-radius: 0 !important;

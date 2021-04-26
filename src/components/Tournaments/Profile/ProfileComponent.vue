@@ -25,12 +25,12 @@
                     <i class="fas fa-sitemap"></i>
                     Partidos
                 </router-link>
-                <router-link
+                <!--<router-link
                     active-class="active-menu-tournament"
                     :to="{ name: 'ResultsTournaments', params: {id: 5}}">
                     <i class="fas fa-list-alt"></i>
                     Resultados
-                </router-link>
+                </router-link> -->
                 <router-link
                     active-class="active-menu-tournament"
                     :to="{ name: 'PositionsTournaments', params: {id: 5}}">

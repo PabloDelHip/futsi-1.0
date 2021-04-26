@@ -117,7 +117,7 @@ const routes = [
             component: TournamentsMatches,
           },
           {
-            path: "results",
+            path: "match-results/:id_match",
             name: "ResultsTournaments",
             component: TournamentsResults,
           },
