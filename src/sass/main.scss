@@ -520,7 +520,8 @@ div.details-leagues {
 
 .contenedor-equipos,
 .contenedor-jugadores,
-.contenedor-partidos {
+.contenedor-partidos,
+.contenedor-reportes {
     border: solid 2px $gris;
     &:hover {
         background-color: $gris;
@@ -693,4 +694,28 @@ div.details-leagues {
 
 .multiselect__tags {
     border-radius: 0 !important;
+}
+
+.contenedor-reportes {
+    min-height: 193px;
+    &:hover {
+        cursor: pointer;
+    }
+    div.icono-reporte {
+        i {
+            font-size: 3.3em;
+            color: $azul-marino;
+        }
+    }
+
+    div.texto-reporte {
+        
+        h3 {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        p {
+            color: $gris-letras
+        }
+    }
 }
