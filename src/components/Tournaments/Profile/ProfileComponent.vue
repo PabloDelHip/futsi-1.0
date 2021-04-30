@@ -47,7 +47,7 @@
                     active-class="active-menu-tournament"
                     :to="{ name: 'PlayersTournaments', params: {id: 5}}">
                     <i class="fas fa-user-shield"></i>
-                    Jugadores
+                    Estadisticas
                 </router-link>
             </div>
         </div>
