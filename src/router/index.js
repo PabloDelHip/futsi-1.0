@@ -5,7 +5,7 @@ import Index from "../views/index.vue";
 
 
 //Tournaments
-import Tournaments from "../views/Tournaments/index.vue";
+//import Tournaments from "../views/Tournaments/index.vue";
 import TournamentsCreate from "../views/Tournaments/Upload/formView.vue";
 import TournamentsList from "../views/Tournaments/ListView.vue";
 import TournamentsPositionsTable from "../views/Tournaments/PositionTableView.vue";
@@ -35,6 +35,9 @@ import LeaguesList from "../views/Leagues/ListView.vue";
 import LeaguesProfile from "../views/Leagues/ProfileView";
 import LeaguesCreate from "../views/Leagues/Form/UploadView.vue";
 
+//Login
+import Login from "../views/Login/Loginview.vue"
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -44,9 +47,14 @@ const routes = [
       
   },
   {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
     path: '/tournaments',
     name: 'Tournaments',
-    component: Tournaments,
+    component: Index,
     children:[
       {
           path: "create",

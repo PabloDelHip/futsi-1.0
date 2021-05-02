@@ -719,3 +719,35 @@ div.details-leagues {
         }
     }
 }
+
+.fondo-login img {
+    width: 100%;
+}
+
+.login {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login-inputs {
+    padding: 40px 20px;
+    background-color: $navye-blue;
+    h2 {
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    label {
+        color: #fff;
+        font-weight: 500 !important;
+        font-size: 14px;
+    }
+
+    input {
+        opacity: .5;
+    }
+
+    .contrasena-login {
+        margin-top: 28px;
+    }
+}
